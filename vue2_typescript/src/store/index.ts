@@ -13,7 +13,6 @@ export default new Vuex.Store({
       return text || ''
     },
     registerValue({ registerValue}) {
-      console.log(registerValue)
       return registerValue || ''
     },
   },
