@@ -2,11 +2,11 @@
 
 ## Clone project
 ```
-git clone ____
+git clone https://github.com/Damjanose/vue2-vuex3-typescript.git
 ```
 ## Go at directory
 ```
-cd ./
+cd ./vue2_typescript
 ```
 
 ## Project setup
