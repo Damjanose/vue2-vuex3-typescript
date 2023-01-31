@@ -1,6 +1,6 @@
 <template>
   <base-container title="Login">
-    <input placeholder="Type here" type="text" v-model="syncText" />
+    <input placeholder="Type here" type="text" v-model.lazy="syncText" />
   </base-container>
 </template>
 
