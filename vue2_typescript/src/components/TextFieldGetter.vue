@@ -1,5 +1,5 @@
 <template>
-  <input type="text" v-model="filterText" />
+  <input type="text" v-model="syncText" />
 </template>
 
 <script lang="ts">
@@ -7,14 +7,11 @@ import { Component, Vue } from 'vue-property-decorator'
 
 @Component
 export default class TextFieldGetter extends Vue {
-  private filter: any = ''
-
-  get filterText(): string {
-    this.filter = localStorage.getItem('loginText')
-    return this.filter;
+  get syncText() {
+    return this.$store.getters.text
   }
-   set filterText(filter: string) {
-    this.filter = localStorage.setItem('loginText', filter)
+  set syncText(text) {
+    this.$store.dispatch('setText', text)
   }
 
 }
