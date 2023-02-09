@@ -1,6 +1,6 @@
 <template>
   <base-container title="Login">
-    <input placeholder="Type here" type="text" v-model.lazy="syncText" />
+    <input placeholder="Type here" type="text" v-model="syncText" />
     <text-field-getter />
   </base-container>
 </template>
@@ -10,48 +10,48 @@
   import TextFieldGetter from "@/components/TextFieldGetter.vue";
 
   export default {
-    beforeCreate() {
-      console.log('beforeCreate')
-    },
-    created() {
-      console.log('created')
-    },
-    beforeMount() {
-      console.log('beforeMount')
-    },
-    mounted() {
-      console.log('mounted')
-    },
-    beforeUpdate() {
-      console.log('beforeUpdate')
-    },
-    updated() {
-      console.log('updated')
-    },
-    beforeUnmount() {
-      console.log('before Unmount')
-    },
-    unmounted() {
-      console.log('unmounted')
-    },
-    errorCaptured() {
-      console.log('errorCaptured')
-    },
-    renderTracked() {
-      console.log('renderTracked')
-    },
-    renderTriggered() {
-      console.log('renderTriggered')
-    },
-    activated() {
-      console.log('activated')
-    },
-    deactivated() {
-      console.log('deactivated')
-    },
-    serverPrefetch() {
-      console.log('serverPrefetch')
-    },
+    // beforeCreate() {
+    //   console.log('beforeCreate')
+    // },
+    // created() {
+    //   console.log('created')
+    // },
+    // beforeMount() {
+    //   console.log('beforeMount')
+    // },
+    // mounted() {
+    //   console.log('mounted')
+    // },
+    // beforeUpdate() {
+    //   console.log('beforeUpdate')
+    // },
+    // updated() {
+    //   console.log('updated')
+    // },
+    // beforeUnmount() {
+    //   console.log('before Unmount')
+    // },
+    // unmounted() {
+    //   console.log('unmounted')
+    // },
+    // errorCaptured() {
+    //   console.log('errorCaptured')
+    // },
+    // renderTracked() {
+    //   console.log('renderTracked')
+    // },
+    // renderTriggered() {
+    //   console.log('renderTriggered')
+    // },
+    // activated() {
+    //   console.log('activated')
+    // },
+    // deactivated() {
+    //   console.log('deactivated')
+    // },
+    // serverPrefetch() {
+    //   console.log('serverPrefetch')
+    // },
     components: {
       TextFieldGetter,
       BaseContainer,

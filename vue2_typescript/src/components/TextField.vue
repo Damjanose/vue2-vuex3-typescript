@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'BaseInput',
+  name: 'TextField',
   props: ['value'],
   methods: {
     updateValue(event) {
