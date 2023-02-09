@@ -1,11 +1,13 @@
 <template>
   <base-container title="Login">
     <input placeholder="Type here" type="text" v-model.lazy="syncText" />
+    <text-field-getter />
   </base-container>
 </template>
 
 <script>
   import BaseContainer from "@/components/BaseContainer.vue";
+  import TextFieldGetter from "@/components/TextFieldGetter.vue";
 
   export default {
     beforeCreate() {
@@ -51,6 +53,7 @@
       console.log('serverPrefetch')
     },
     components: {
+      TextFieldGetter,
       BaseContainer,
     },
     computed: {
