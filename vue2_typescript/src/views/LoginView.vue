@@ -2,20 +2,19 @@
   <base-container title="Login">
     <input placeholder="Type here" type="text" v-model="syncText" />
     <text-field-getter v-model="value" />
-    <NewTextField />
-    <br />
-    {{ value }}
+    <input-field v-model="value"/> <br />
+    Value: {{ value }}
   </base-container>
 </template>
 
-<script lang="ts">
+<script lang="ts">                                                                              
 import {Component, Vue} from "vue-property-decorator";
 
-  import BaseContainer from "@/components/BaseContainer.vue";
-  import TextFieldGetter from "@/components/TextFieldGetter.vue";
-  import NewTextField from "@/components/NewTextField.vue";
+import TextFieldGetter from "@/components/TextFieldGetter.vue";
+import BaseContainer from "@/components/BaseContainer.vue";
+import InputField from "@/components/InputField.vue";
 
-@Component({ components: { BaseContainer, TextFieldGetter, NewTextField } })
+@Component({ components: { InputField, BaseContainer, TextFieldGetter } })
 export default class LoginView extends Vue{
   value = ''
   get syncText() {
