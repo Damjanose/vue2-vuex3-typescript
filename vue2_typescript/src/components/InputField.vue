@@ -2,12 +2,12 @@
     <input placeholder="Type here" type="text" v-model="syncValue" />
 </template>
 <script lang="ts">
-import {Component, Vue } from "vue-property-decorator";
+import {Component, Vue, Prop } from "vue-property-decorator";
 
 @Component
-export default class InputField extends Vue{
+export default class InputField extends Vue {
+  @Prop() value!: string
 
-  value = ''
   get syncValue() {
     return this.value
   }
