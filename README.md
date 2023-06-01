@@ -31,3 +31,11 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### About Project
+> 2 page application
+> 
+> Login with 3 inputField and 1 textField
+> Register with 2 inputFields
+> 
+> text get save in store adn will not lose when page reloads
